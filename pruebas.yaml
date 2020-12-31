@@ -7,12 +7,12 @@
     - name : git pull
       command: chdir=/home/ubuntu/practica4-sa git pull
     - name : stop container
-      command: chdir=/home/ubuntu/practica4-sa sudo docker stop practica
+      command: chdir=/home/ubuntu/practica4-sa docker stop practica
     - name : remove container
-      command: chdir=/home/ubuntu/practica4-sa sudo docker rm practica
+      command: chdir=/home/ubuntu/practica4-sa docker rm practica
     - name : remove image
-      command: chdir=/home/ubuntu/practica4-sa sudo docker rmi imagen
+      command: chdir=/home/ubuntu/practica4-sa docker rmi imagen
     - name : build image
-      command: chdir=/home/ubuntu/practica4-sa sudo docker build -t imagen .
+      command: chdir=/home/ubuntu/practica4-sa docker build -t imagen .
     - name : run
-      command: chdir=/home/ubuntu/practica4-sa sudo docker run --name practica -p 8082:4000 -d imagen
+      command: chdir=/home/ubuntu/practica4-sa docker run --name practica -p 8082:4000 -d imagen
