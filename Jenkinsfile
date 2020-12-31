@@ -15,7 +15,6 @@ pipeline {
 		}
 		stage ('Deploy'){
 			steps {
-				sh 'npm start'
                 sh 'sudo ansible-playbook pruebas.yaml'
                 sh 'sudo ansible-playbook produccion.yaml'
             }
