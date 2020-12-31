@@ -5,24 +5,24 @@ pipeline {
     stages {
 		stage ('Dependencias'){
 			steps {
-				sh '''
-                    npm install
-				'''
+				sh 'npm install'
 			}
 		}
 		stage('Pruebas'){
 			steps {
-				sh '''
-					npm test
-				'''
+				sh 'npm test'
 			}
 		}
 		stage ('Deploy'){
 			steps {
-				sh '''
-					npm start
-                '''
-			}
+				sh 'npm start'
+            }
+		}
+        stage ('Fin'){
+			steps {
+				sh 'forever stopall'
+                sh 'sleep 3'
+            }
 		}
 	}
 
