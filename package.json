@@ -1,0 +1,28 @@
+{
+  "name": "practica1-201403841_sa",
+  "version": "1.0.0",
+  "description": "Practica 1, Software Avanzado, diciembre 2020",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npx jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huriel2g/Practica1-201403841_SA.git"
+  },
+  "author": "201403841 - Huriel Gomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huriel2g/Practica1-201403841_SA/issues"
+  },
+  "homepage": "https://github.com/huriel2g/Practica1-201403841_SA#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jasmine-node": "^3.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "jasmine": "^3.6.3"
+  }
+}
