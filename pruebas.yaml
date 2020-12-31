@@ -1,7 +1,7 @@
 ---
 - name: playbook
   hosts: pruebas
-  remote_user: ubuntu
+  remote_user: pruebas
   become: true
   tasks:
     - name : git pull
