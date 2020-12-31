@@ -16,12 +16,8 @@ pipeline {
 		stage ('Deploy'){
 			steps {
 				sh 'npm start'
-            }
-		}
-        stage ('Fin'){
-			steps {
-				sh 'forever stopall'
-                sh 'sleep 3'
+                sh 'sudo ansible-playbook pruebas.yaml'
+                sh 'sudo ansible-playbook produccion.yaml'
             }
 		}
 	}
